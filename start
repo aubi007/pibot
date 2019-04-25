@@ -1,0 +1,17 @@
+#!/bin/sh
+#**********************************************************************
+#* Filename    : start
+#* Description : a simple bash script to run the django server
+#* Author      : Aubi
+#* Brand       : 
+#* E-mail      : 
+#* Website     : 
+#**********************************************************************
+
+if [ "$1" = "" ]
+then
+	# Run server listen to any IP address and port 8000
+	echo "Server running"
+	python manage.py runserver 0.0.0.0:8000
+
+fi
